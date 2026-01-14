@@ -18,6 +18,7 @@ const checkRateLimit = async ({ key, capacity, refillrate }) => {
   return {
     allowed: result[0] === 1,
     remaining: result[1],
+    key: key,
   };
 };
 
